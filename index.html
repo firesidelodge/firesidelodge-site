@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fireside Lodge</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f3ef;
+      color: #222;
+    }
+
+    header {
+      background: #2b1e17;
+      color: white;
+      padding: 16px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h2 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #c48b4b;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      min-height: 85vh;
+      position: relative;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.45);
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text {
+      color: white;
+    }
+
+    .hero-text h1 {
+      font-size: 52px;
+      margin-bottom: 14px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin-bottom: 22px;
+      max-width: 550px;
+    }
+
+    .booking-box {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .booking-box h3 {
+      margin-top: 0;
+      font-size: 30px;
+      margin-bottom: 12px;
+    }
+
+    .booking-box p {
+      margin-bottom: 18px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 34px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .footer {
+      background: #2b1e17;
+      color: white;
+      text-align: center;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text h1 {
+        font-size: 38px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        margin-top: 12px;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Fireside Lodge</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=b4b8d0c0ebf14479ab7e9bf6bc09f92f&Operation=Date">Check Availability</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Your Cozy Escape in Big Bear</h1>
+          <p>Relax in a warm and welcoming mountain stay near Big Bear’s top attractions, scenic views, and outdoor adventures.</p>
+          <a class="btn" href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=b4b8d0c0ebf14479ab7e9bf6bc09f92f&Operation=Date">Reserve Your Stay</a>
+        </div>
+
+        <div class="booking-box">
+          <h3>Check Availability</h3>
+          <p>Select your travel dates and view available rooms directly through our secure reservation system.</p>
+          <a class="btn" href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=b4b8d0c0ebf14479ab7e9bf6bc09f92f&Operation=Date">Search Rooms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>Why Stay With Us?</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Cozy Rooms</h3>
+        <p>Enjoy clean, comfortable rooms designed for a relaxing mountain getaway.</p>
+      </div>
+      <div class="card">
+        <h3>Great Location</h3>
+        <p>Stay close to Big Bear Lake, local attractions, and seasonal outdoor activities.</p>
+      </div>
+      <div class="card">
+        <h3>Direct Booking</h3>
+        <p>Book directly through our reservation system for a smooth and simple booking experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="amenities">
+    <h2>Amenities</h2>
+    <div class="features">
+      <div class="card">
+        <h3>Free Breakfast</h3>
+        <p>Start your morning with a simple and satisfying breakfast before heading out.</p>
+      </div>
+      <div class="card">
+        <h3>Comfortable Stay</h3>
+        <p>Warm interiors and a peaceful setting make Fireside Lodge a great place to unwind.</p>
+      </div>
+      <div class="card">
+        <h3>Mountain Experience</h3>
+        <p>Perfect for guests visiting Big Bear for snow, lake trips, hiking, or a quiet escape.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="card" style="max-width:700px; margin:auto;">
+      <p><strong>Fireside Lodge</strong></p>
+      <p>Big Bear Lake, California</p>
+      <p>Add your phone number, address, and email here.</p>
+      <a class="btn" href="https://reservation.asiwebres.com/SearchAvailability.aspx?id=b4b8d0c0ebf14479ab7e9bf6bc09f92f&Operation=Date">Book Now</a>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>© 2026 Fireside Lodge. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
